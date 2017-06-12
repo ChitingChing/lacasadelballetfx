@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.102" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.proyects.lacasadelballetfx.MainController">
+    <stylesheets>
+        <URL value="@/styles/main.css" />
+    </stylesheets>
+   <children>
+      <JFXHamburger fx:id="hamburger" layoutX="14.0" layoutY="14.0" />
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="200.0" layoutY="45.0" prefHeight="355.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <children>
+            <AnchorPane prefHeight="355.0" prefWidth="2311.0">
+               <children>
+                  <Button layoutX="49.0" mnemonicParsing="false" text="Button" />
+                  <JFXDatePicker layoutX="16.0" layoutY="93.0" />
+                  <ColorPicker layoutX="201.0" layoutY="178.0" />
+               </children>
+            </AnchorPane>
+         </children></JFXDrawer>
+   </children>
+</AnchorPane>
